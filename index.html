@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="light dark" />
+  <title>Writeup Title</title>
+  <meta name="description" content="A GitHub-style writeup page." />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#content">Skip to content</a>
+
+  <header class="site-header" role="banner">
+    <div class="container">
+      <div class="brand">
+        <div class="brand__mark" aria-hidden="true">#</div>
+        <div class="brand__text">
+          <div class="brand__title">Writeup</div>
+          <div class="brand__subtitle">GitHub-friendly static page</div>
+        </div>
+      </div>
+
+      <div class="meta" aria-label="Writeup metadata">
+        <div class="meta__row">
+          <span class="meta__label">Title</span>
+          <span class="meta__value" id="pageTitle">Writeup Title</span>
+        </div>
+        <div class="meta__row">
+          <span class="meta__label">Author</span>
+          <span class="meta__value">Your Name</span>
+        </div>
+        <div class="meta__row">
+          <span class="meta__label">Date</span>
+          <time class="meta__value" datetime="2026-02-15">Feb 15, 2026</time>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="container layout">
+    <aside class="sidebar" aria-label="Table of contents">
+      <div class="sidebar__inner">
+        <div class="sidebar__title">Contents</div>
+        <nav id="toc" class="toc" aria-label="On this page">
+          <div class="toc__empty">Add headings (H2/H3) to generate a table of contents.</div>
+        </nav>
+        <div class="sidebar__hint">
+          Tip: Use H2/H3 headings in the article.
+        </div>
+      </div>
+    </aside>
+
+    <main id="content" class="content" role="main">
+      <article class="article" aria-label="Writeup">
+        <h1>Writeup Title</h1>
+        <p class="lead">
+          Short summary of what this writeup is about. Keep it 2–3 sentences.
+        </p>
+
+        <section>
+          <h2>Problem</h2>
+          <p>
+            Describe the problem statement, constraints, and expected behavior.
+          </p>
+          <ul>
+            <li>What you were trying to do</li>
+            <li>What wasn’t working</li>
+            <li>What “done” looks like</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Approach</h2>
+          <h3>Key idea</h3>
+          <p>
+            Explain the core concept at a high level.
+          </p>
+
+          <h3>Pseudocode</h3>
+          <pre><code class="language-text"># Example snippet
+for item in items:
+  process(item)
+</code></pre>
+        </section>
+
+        <section>
+          <h2>Implementation</h2>
+          <p>
+            Add details about what you built. Use code blocks for important parts.
+          </p>
+          <pre><code class="language-js">function hello(name) {
+  return `Hello, ${name}!`;
+}
+</code></pre>
+        </section>
+
+        <section>
+          <h2>Results</h2>
+          <p>
+            Summarize outcomes and any measurements.
+          </p>
+          <blockquote>
+            Keep results concrete: what improved, what changed, what remains.
+          </blockquote>
+        </section>
+
+        <section>
+          <h2>Next steps</h2>
+          <ol>
+            <li>Follow-up task</li>
+            <li>Edge case to handle</li>
+            <li>Documentation update</li>
+          </ol>
+        </section>
+
+        <footer class="article__footer">
+          <p>
+            <span class="muted">Last updated:</span>
+            <time id="lastUpdated" datetime="2026-02-15">Feb 15, 2026</time>
+          </p>
+          <p class="muted">
+            This is a static HTML template. Edit the content in <strong>index.html</strong>.
+          </p>
+        </footer>
+      </article>
+    </main>
+  </div>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <span class="muted">Built as a simple writeup page template.</span>
+    </div>
+  </footer>
+
+  <script src="./script.js" defer></script>
+</body>
+</html>
